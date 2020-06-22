@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body, html {
+    height: calc(100% - 2em);
+    margin: 0;
+    font-family: 'Montserrat';
+}
+
+body {
+    background-image: url("grandCan.jpg");
+    background-repeat: no-repeat;
+    background-position: center    ;
+    background-size: cover; 
+    background-attachment: fixed;
+}
+
+aside {
+    color: #ffffff;
+    display: grid;
+    grid-template-columns: auto 40px;
+    padding: 2em;
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+}
+
+#menu{ 
+    width: 40px;
+    cursor: pointer;
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+}
+
+figure {
+    margin:  0;
+    font-size:  1.3em;
+    font-weight: bold;
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+}
+
+nav{
+    background: #ffffff;
+
+}
+
+.active{
+    position: absolute;
+    display: block;
+    background: #ffffff;
+    width: 50%;
+    left: 0;
+    top: 0;
+    height: 100%;    
+}
+
+ul {
+    display: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1em;
+    display: block;
+    padding: 1.5em 3em;
+    background-color: rgba(255,255,255,.81);
+    color: slateblue;
+}
+
+main {
+    background-color: #ffffff;
+    padding: 1em 1.4em;
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+}
+
+h1 {
+    margin: 0;
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+}
+
+p { 
+    font-size:  1.1em;
+    line-height: 1.5em;
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+}
+
+@media only screen and (min-width: 767px) {
+    body {
+        display: grid;
+        grid-template-columns: 25% auto;
+        padding: 6em;
+    }
+
+    img {
+        display: none;
+    }
+
+    aside {
+        background: rgba(255, 153, 0, 0.61);
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        padding: 0;
+        animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+    }
+
+    main {
+        padding: 4em;
+        background: white url('bg.svg') no-repeat bottom right;
+        background-size: 50%;
+        animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+    }
+
+    figcaption {
+        padding-top: 10em;
+        text-align: center;
+        color: #000;
+        animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+    }
+
+    ul {
+        display: block;
+        margin-top: 2em;
+        position: relative !important;
+        background: none !important;
+        width: 100% !important;
+        animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+    }
+
+    ul li a:hover {
+        background-color: #fff;    
+          
+    }
+
+    nav {
+        background: none;
+        animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+    }    
+
+    h1 {
+        font-size: 2em;
+        margin-top: 2em;
+        animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+    }
+
+    p {
+        font-size: 1.5em;
+        animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+    }
+
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+

@@ -1,0 +1,49 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+
+    <title>Daniel Rutter's Website</title>
+</head>
+<body>
+    <aside>
+        
+        <figure>            
+            <figcaption>Daniel Rutter's 
+                Website</figcaption>
+        </figure>
+        <img class="menu" src="{% static 'css/menu.svg' %}">
+        <nav>
+            <ul>
+                <li><a href="{% url 'post_list'%}">Blog</a></li>
+                <li><a href="https://www.linkedin.com/in/daniel-rutter-443529170/">LinkedIn</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <main>
+        <h1>Hello, World</h1>
+        <p>Hi There! My name is Daniel Rutter and I'm a Computer Science 
+            student at the University of Birmingham. 
+            
+            This website was built as part of a bridging coursework project 
+            to act as a hub for a portfolio and a blog page.
+            
+            From here you can find access to my other pages such as my blog 
+            and my LinkedIn Profile where the majority of my portfolio is shown.</p>
+           
+        </main>
+    <script> 
+        (function() {
+                var menu = document.querySelector('ul'),
+                    menulink = document.querySelector('img');
+                
+                menulink.addEventListener('click', function(e) {
+                    menu.classList.toggle('active');
+                    e.preventDefault();
+                });
+            })();
+    </script>
+</body>
+</html>
